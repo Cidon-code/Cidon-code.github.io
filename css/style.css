@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Grandstander";
+    src: url(../fonts/Grandstander-ExtraBold.ttf);
+}
+
+ul {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+}
+ul li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    padding: 3px; /* Поля вокруг текста */
+}
+
+body {
+    background: linear-gradient(-45deg, #6A5ACD, #00BFFF, #77ff99, #938cf0, #c66fff, #fd310d, #eb207f);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 25%;
+    }
+    25% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+    }
+    75% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 0% 25%;
+	}
+}
+
+h1 {
+    font-family: "Grandstander";
+    font-size: 75px;
+}
+h3 {
+    font-family: "Grandstander";
+    font-size: 40px;
+}
+
+.logo {
+    border-radius: 100%;
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+}
+
+.name {
+    color: white;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 102px);
+}
+
+.dev {
+    color: white;
+    position: absolute;
+    top: calc(50% + 50px);
+    left: calc(50% - 94px);
+}
+
+.vk {
+    position: absolute;
+    top: calc(50% + 200px);
+    left: calc(50% + 11px);
+}
+.github {
+    position: absolute;
+    top: calc(50% + 200px);
+    left: calc(50% - 75px);
+}
